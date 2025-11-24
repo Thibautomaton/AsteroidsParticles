@@ -5,7 +5,7 @@ class ParticleSystem(object):
         self.particles = []
         self.location = PVector(x, y)
         self.gravity = PVector(0, 0.1)
-        
+                
     def addParticle(self, velocity):
         self.particles.append(Particle(self.location.x, self.location.y, velocity))
         

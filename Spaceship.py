@@ -11,7 +11,6 @@ class Spaceship(object):
         
         self.ps1 = ParticleSystem(self.location.x -15, self.location.y+5)
         self.ps2 = ParticleSystem(self.location.x + 12, self.location.y+5)
-        print("ok")
         
     def update(self):
         self.velocity+=self.acceleration

@@ -24,9 +24,9 @@ def keyPressed():
     if key==CODED:
         if keyCode==UP:
             sp.applyForce(PVector(cos(sp.angle)*strength,sin(sp.angle)*strength))
-        elif keyCode==DOWN:
+        if keyCode==DOWN:
             sp.applyForce(PVector(-cos(sp.angle)*strength,-sin(sp.angle)*strength))
         if keyCode==LEFT:
             sp.angle -=0.05
-        elif keyCode==RIGHT:
+        if keyCode==RIGHT:
             sp.angle +=0.05
